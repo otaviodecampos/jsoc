@@ -1,0 +1,24 @@
+{
+  "name": "jsoc",
+  "version": "1.0.0",
+  "description": "Javascript Utilities",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "javascript",
+    "utlities"
+  ],
+  "author": "otaviodecampos",
+  "license": "ISC",
+  "dependencies": {
+    "gulp-concat": "^2.6.0",
+    "gulp-context": "0.0.20",
+    "gulp-order": "^1.1.1"
+  },
+  "devDependencies": {
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^2.0.0"
+  }
+}

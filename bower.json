@@ -1,0 +1,22 @@
+{
+  "name": "jsoc",
+  "authors": [
+    "otaviodecampos <otaviodecampos@hotmail.com>"
+  ],
+  "description": "Javascript Utilities",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "javascript",
+    "utility"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

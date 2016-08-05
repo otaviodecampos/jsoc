@@ -1,0 +1,16 @@
+{
+  "compile": {
+    "path": {
+      "build-name": "jsoc",
+      "build-dir": "dist",
+      "src-dir": "src"
+    },
+    "clean": true,
+    "default": true,
+    "task-dir": "tasks",
+    "task": {
+      "concat": true,
+      "minify": "concat"
+    }
+  }
+}

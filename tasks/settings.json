@@ -1,0 +1,12 @@
+{
+	"concat": {
+		"filename": "jsoc.js",
+		"order": [
+			"**/main.js",
+			"**/*.js"
+		]
+	},
+	"minify": {
+		"filename": "jsoc.min.js"
+	}
+}
