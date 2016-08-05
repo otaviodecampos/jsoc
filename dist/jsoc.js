@@ -3,10 +3,10 @@
 })(window);
 (function (jsoc) {
 
-    var get = 'get';
-    var set = 'set';
-    var toggle = 'toggle';
-    var is = 'is';
+    var GET = 'get';
+    var SET = 'set';
+    var TOGGLE = 'toggle';
+    var IS = 'is';
 
     jsoc.bindGetterSetter = function (obj) {
         for (var attr in obj) {
@@ -14,7 +14,7 @@
             (function (attr) {
                 var attrValue = obj[attr];
 
-                if (jsoc.notStartWith(attr, get) && jsoc.notStartWith(attr, set) && jsoc.notStartWith(attr, toggle) && jsoc.notStartWith(attr, is)) {
+                if (jsoc.notStartWith(attr, GET) && jsoc.notStartWith(attr, SET) && jsoc.notStartWith(attr, TOGGLE) && jsoc.notStartWith(attr, IS)) {
                     obj[setter(attr)] = function (value) {
                         if (jsoc.isObject(value)) {
                             value = jsoc.extend(obj[attr], value);
@@ -49,19 +49,19 @@
     }
 
     function getter(name) {
-        return get + jsoc.capitalize(name);
+        return GET + jsoc.capitalize(name);
     }
 
     function booleanGetter(name) {
-        return is + jsoc.capitalize(name);
+        return IS + jsoc.capitalize(name);
     }
 
     function toggle(name) {
-        return toggle + jsoc.capitalize(name);
+        return TOGGLE + jsoc.capitalize(name);
     }
 
     function setter(name) {
-        return set + jsoc.capitalize(name);
+        return SET + jsoc.capitalize(name);
     }
 
 })(jsoc);
