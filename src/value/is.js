@@ -5,11 +5,11 @@
     }
 
     jsoc.isObject = function(value) {
-        return typeof attrValue == "object";
+        return typeof value == "object";
     }
 
     jsoc.isString = function(value) {
-        return typeof attrValue == "string";
+        return typeof value == "string";
     }
 
     jsoc.isTrue = function(value) {
